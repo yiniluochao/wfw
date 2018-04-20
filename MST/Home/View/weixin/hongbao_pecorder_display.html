@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>控制台 微防伪商品信息系统</title>
+<meta name="keywords" content="微防伪商品信息系统" />
+<meta name="description" content="微防伪商品信息系统" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- basic styles -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/assets/css/ace.min.css" />
+<!--[if IE 7]>
+		  <link rel="stylesheet" href="/assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+<link rel="stylesheet" href="/assets/css/ace.min.css" />
+<link rel="stylesheet" href="/assets/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/assets/css/ace-skins.min.css" />
+<link rel="stylesheet" href="/assets/css/hongbao.css" />
+
+<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="/assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+<!-- ace settings handler -->
+
+<script src="/assets/js/ace-extra.min.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<div class="navbar navbar-default" id="navbar">
+		<script type="text/javascript">
+			try {
+				ace.settings.check('navbar', 'fixed')
+			} catch (e) {
+			}
+		</script>
+		<div class="navbar-container" id="navbar-container">
+			<div class="navbar-header pull-left">
+				<a href="/" class="navbar-brand"> <img
+					src="/assets/images/logo.png" style="height: 60px;"></img>
+				</a>
+				<!-- /.brand -->
+			</div>
+			<!-- /.navbar-header -->
+			<!-- /.navbar-header -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<div class="main-container" id="main-container">
+		<script type="text/javascript">
+			try {
+				ace.settings.check('main-container', 'fixed')
+			} catch (e) {
+			}
+		</script>
+		<div class="main-container-inner">
+			<include file="Public/left" />
+			<div class="main-content">
+				<div class="breadcrumbs" id="breadcrumbs">
+					<script type="text/javascript">
+						try {
+							ace.settings.check('breadcrumbs', 'fixed')
+						} catch (e) {
+						}
+					</script>
+					<ul class="breadcrumb">
+						<li><i class="icon-home home-icon"></i> <a href="/">首页</a></li>
+						<li class="active">红包</li>
+					</ul>
+					</div>
+				<div>
+			<!-- 	<div class="hongbao_box box1">
+						<div class="hongbao_num">{$hongbao_sum}</div><div class="hongbao_text">请确保账户余额大于</div>
+					</div>
+					<div class="hongbao_box box2">
+						<div class="hongbao_num">{$hongbao_send_sum}</div><div class="hongbao_text">已领取红包总数</div>
+					</div>
+					<div class="hongbao_box box3">
+						<div class="hongbao_num">5000</div><div class="hongbao_text">未领取红包数量</div>
+					</div>
+					<div class="hongbao_box box4">
+						<div class="hongbao_num">10</div><div class="hongbao_text">订单总数</div>
+					</div>
+					<div class="hongbao_box box5">
+						<div class="hongbao_num">6</div><div class="hongbao_text">开启红包的订单数量</div>
+					</div>
+				</div>  -->  	
+              <div class="col-xs-12">
+                <div class="table-responsive">
+					<table id="sample-table-1" class="table table-bordered table-hover table-striped"
+						>
+						<thead>
+							<tr>
+								<th>订单号</th>
+								<th>所属批次</th>
+								<th>创建时间</th>
+								<th>红包数量</th>
+								<th>已取数量</th>
+								<th>余额</th>
+								<th>状态</th>
+							<!--  	<th>开关</th> -->
+							<!--  	<th>红包详情</th> -->
+								<th>详细配置</th>
+							</tr>
+						</thead>
+						<tbody>
+						<volist name="list" id="vo">
+							<tr>
+								<td>{$vo.pec_order_code}</td>
+								<td>{$vo.batch_code}</td>
+								<td>{$vo.createtime}</td>
+								<td>{$vo.hongbao_sum}</td>
+								<td>{$vo.hongbao_send_sum}</td>
+								<td>{$vo.hongbao_remain}</td>
+								
+								<td>{$vo.type}</td>
+							<!--	<td><label>
+									<input type="checkbox" class="ace ace-switch ace-switch-4" />
+									<span class="lbl small"></span>
+									</label>	</td>  -->
+							<!-- 	<td><a href=""><img width="70px" height="22px" alt="" src="/assets/images/review.png"></a></td> -->
+								<td><a href="/weixin/hongbao_pecorder_configure/{$vo.pec_order_id}"><img width="70px" height="22px" alt="" src="/assets/images/edit.png"></a></td>
+							</tr>
+						</volist>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		
+	</div>
+	</div>
+	</div>
+
+
+	<script src="/assets/js/jquery-1.10.2.min.js"></script>
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<script src="/assets/js/typeahead-bs2.min.js"></script>
+	<script src="/assets/js/resizableColumns.min.js"></script>
+	<!-- page specific plugin scripts -->
+
+	<!--[if lte IE 8]>
+		  <script src="/assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+	<script src="/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="/assets/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="/assets/js/jquery.slimscroll.min.js"></script>
+	<script src="/assets/js/jquery.easy-pie-chart.min.js"></script>
+	<script src="/assets/js/jquery.sparkline.min.js"></script>
+	<script src="/assets/js/flot/jquery.flot.min.js"></script>
+	<script src="/assets/js/flot/jquery.flot.pie.min.js"></script>
+	<script src="/assets/js/flot/jquery.flot.resize.min.js"></script>
+	<!-- ace scripts -->
+
+	<script src="/assets/js/ace-elements.min.js"></script>
+	<script src="/assets/js/ace.min.js"></script>
+
+	<!-- inline scripts related to this page -->
+	
+</body>
+</html>

@@ -1,0 +1,12 @@
+*{font-family: "Microsoft YaHei";font-size: 14px;margin:0;}
+a{text-decoration:none;color: black;}
+body{background-color: #f8f8f8;}
+.signbox{width: 45%;margin: 30px auto;text-align: center;}
+.sign{border: solid 2px #dadada;border-radius: 40px;margin-top: 30px;}
+.title{margin-top: 20px;margin-bottom: 20px;color: #4c9efa;}
+.inp{width: 65%; float: right;clear: both;background-color: white;border-radius: 4px;border: solid 1.5px #b9b9b9;}
+div{margin-top: 10px;margin-bottom: 20px;}
+.inputbox div{text-align: left;}
+#done{margin-top: 25px; border:0;background-color: #4c9efa;height: 30px; width: 350px;border-radius: 4px;clear: both;color: white;}
+#done:hover{background-color: #66acfa;}
+.sign_label{display:inline-block;text-align:right;width:90px;}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>取证定位</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="icon" type="image/x-icon" href="/assets/js/cloud.ico">
+	<link rel="stylesheet" type="text/css" href="/assets/js/Evidence.css">
+	<!--引入CSS-->
+	<link rel="stylesheet" type="text/css" href="/assets/js/webuploader/webuploader.css">
+	
+</head>
+<body>
+	<div class="evidence_box">
+		<textarea class="c_area" placeholder="说点什么..." id="textMessage"></textarea>
+		<!-- <div id="uploader-demo">
+		    
+		    <div id="fileList" class="uploader-list"></div>
+		    <div id="filePicker">选择图片</div>
+		</div> -->
+	<!-- oo -->
+	<div id="uploader" class="wu-example">
+    <div class="queueList">
+        <div id="dndArea" class="placeholder">
+            <div id="filePicker"></div>
+        </div>
+    </div>
+    <div class="statusBar" style="display:none;">
+    	<div class="progress">
+            <span class="text">0%</span>
+            <span class="percentage"></span>
+        </div><div class="info"></div>
+        <div class="btns">
+            <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+        </div>
+    </div>
+	</div>
+	<!-- ff -->
+	</div>
+	<div class="location_box">
+		<input type="hidden" value='{$username}' id='username'>
+		<input type="hidden" id="key" value="{$key}" /><!-- 数字身份码 -->
+		<input type="hidden" id='uid' value='{$uid}' /><!-- 平台uid -->
+		<img class="location_img" src="/assets/images/location.png"><label>我的位置:</label>
+		<label id="usercheck" style="line-height: 28px"></label>
+		<button class="location_btn" type="button" onclick="getLocation();">获取当前位置</button>
+	</div>
+
+	<div class="submit_box">	
+		<input class="return_btn" type="button" value="返回">
+		<button class="submit_btn" type="button" onclick="goMessage();">提交</button>
+	</div>
+	
+	<!--引入JS-->
+	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/webuploader/webuploader.js"></script>
+	<script type="text/javascript" src="/assets/js/uppic.js"></script>
+	<script type="text/javascript">
+			function getLocation(){
+				var username = $('#username').val();
+				var uid = $('#uid').val();
+				var number = $('#key').val();
+				//alert(username);
+				$.ajax({
+						url:"/api/getLocation/"+uid+"/"+number,
+						type:"POST",
+						data:"username="+username,
+						dataType:"text",
+						success:function(data){
+							
+							$("#usercheck").text(data);
+						}
+						
+					});
+			}
+			
+		</script>
+		<script type="text/javascript">
+			function goMessage(){
+				
+				var textMessage = $('#textMessage').val();
+				var username = $('#username').val();
+				var uid = $('#uid').val();
+				var number = $('#key').val();
+				//alert(username);
+				$.ajax({
+						url:"/api/getMessage/"+textMessage+"/"+uid+"/"+number,
+						type:"POST",
+						data:"username="+username,
+						dataType:"text",
+						success:function(data){
+						alert(data);
+						}
+						
+					});
+			}
+			
+		</script>
+		
+</body>
+</html>

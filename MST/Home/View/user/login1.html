@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>微防伪</title>
+		<meta name="keywords" content="Bootstrapģ��,Bootstrapģ������,Bootstrap�̳�,Bootstrap����" />
+		<meta name="description" content="վ���ز��ṩBootstrapģ��,Bootstrap�̳�,Bootstrap���ķ�������Bootstrap�������" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- basic styles -->
+
+		<link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+		<script type="text/javascript" src="/assets/js/verify.js"></script>
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+		<!-- page specific plugin styles -->
+
+		<!-- fonts -->
+
+		
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href="/assets/css/ace.min.css" />
+	    <link rel="stylesheet" href="/assets/css/ace-rtl.min.css" /> 
+		<link rel="stylesheet" href="/assets/css/login.css" />
+		
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+<!-- style="background-image:url(/assets/css/images/wfw.jpg) !important;height='100px'; width ='100px'; -->
+	<body class="login-layout" >
+	<div id="Layer1" style="position:absolute; width:100%; height:100%; z-index:-1">    
+<img src="/assets/css/images/wfw1.png" height="100%" width="100%"/>    
+</div>
+		<div class="main-container">
+			<div class="main-content">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="login-container">
+							<div class="center">
+								<h1>
+								
+									
+									<span class="white">微防伪商品信息系统</span>
+								</h1>
+								<h4 class="blue">&copy; 成都菲普迪斯科技有限公司</h4>
+							</div>
+
+							<div class="space-6"></div>
+
+							<div class="position-relative">
+								<div id="login-box" class="login-box visible widget-box no-border">
+									<div class="widget-body">
+										<div class="widget-main">
+											<h4 class="header blue lighter bigger">
+												
+												企业客户登录
+                                                {$error}
+											</h4>
+
+											<div class="space-6"></div>
+
+											<form action="/user/loginIn" method="post">
+												<fieldset>
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="text" class="form-control" placeholder="用户名" name="login"/>
+															<i class="icon-user"></i>
+														</span>
+													</label>
+
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="password" class="form-control" placeholder="密码" name="password"/>
+															<i class="icon-lock"></i>
+														</span>
+													</label>
+
+													<div class="space"></div>
+
+													<div class="clearfix">
+														<label class="inline">
+														  验证码：<input type="code" name="code" />
+														</label>
+														<br/>
+														<label class="inline">
+ 														 <img src="{:U('Verify/verifier','','')}" id="code" />
+ 														 <a href="javascript:void(change_code(this));">看不清</a>
+														</label>
+														<button type="submit" class="width-35 pull-right btn btn-sm btn-primary" >
+															<i class="icon-key"></i>
+															登录
+														</button>
+													</div>
+
+													<div class="space-4"></div>
+												</fieldset>
+											</form>
+
+											<div class="social-or-login center">
+												<span class="bigger-110"> 找回密码or注册</span>
+											</div>
+
+											<div class="social-login center">
+												
+											</div>
+										</div><!-- /widget-main -->
+
+										<div class="toolbar clearfix">
+											<div>
+												<a href="#" onclick="show_box('forgot-box'); return false;" class="forgot-password-link">
+													<i class="icon-arrow-left"></i>
+													忘记密码
+												</a>
+											</div>
+
+											<div>
+                                            	<a href="/user/register" class="user-signup-link">
+													<i class="icon-arrow-right"></i>
+													注册
+												</a>
+												
+											</div>
+										</div>
+									</div><!-- /widget-body -->
+								</div><!-- /login-box -->
+
+										<div id="forgot-box" class="forgot-box widget-box no-border">
+									<div class="widget-body">
+										<div class="widget-main">
+											<h4 class="header red lighter bigger">
+												<i class="icon-key"></i>
+												重置密码
+											</h4>
+
+											<div class="space-6"></div>
+											<p>
+												输入验证邮箱
+											</p>
+
+											<form action="/user/findpw" method="post">
+												<fieldset>
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input  name="email" type="email" class="form-control" placeholder="email" />
+															<i class="icon-envelope"></i>
+														</span>
+													</label>
+
+													<div class="clearfix">
+														<button type="submit"  class="width-35 pull-right btn btn-sm btn-danger">
+															<i class="icon-lightbulb"></i>
+															Send Me!
+														</button>
+													</div>
+												</fieldset>
+											</form>
+										</div><!-- /widget-main -->
+
+										<div class="toolbar center">
+											<a href="#" onclick="show_box('login-box'); return false;" class="back-to-login-link">
+												回登录页面
+												<i class="icon-arrow-right"></i>
+											</a>
+										</div>
+									</div><!-- /widget-body -->
+								</div><!-- /forgot-box -->
+
+								<div id="signup-box" class="signup-box widget-box no-border">
+									<div class="widget-body">
+										<div class="widget-main">
+											<h4 class="header green lighter bigger">
+												<i class="icon-group blue"></i>
+												注册新账户
+											</h4>
+
+											<div class="space-6"></div>
+									  <p> 详细信息 </p>
+
+									
+  <form action="/user/register_deal" method="post" class="form-horizontal" >
+    <fieldset>
+      <div id="legend" class="" >
+        <legend class="control-label" >账号注册</legend>
+      </div>
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" >用户名</label>
+          <div class="controls">
+            <input placeholder="登录用户名" class="input-xlarge" type="text" name="login">
+            
+          </div>
+        </div>
+
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" >密码</label>
+          <div class="controls">
+            <input placeholder="密码，至少6位" class="input-xlarge" type="password" name="password">
+            
+          </div>
+        </div><div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label">确认密码</label>
+          <div class="controls">
+            <input placeholder="密码，至少6位" class="input-xlarge" type="password" name="repeatpassword">
+            
+          </div>
+        </div><div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" >企业名称</label>
+          <div class="controls">
+            <input placeholder="企业全称" class="input-xlarge" type="text" name="company_name">
+            
+          </div>
+             <!-- Text input-->
+          <label class="control-label" >企业英文名称</label>
+          <div class="controls">
+            <input placeholder="企业全称" class="input-xlarge" type="text" name="english_name">
+            
+          </div>
+        </div><div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" >企业地址</label>
+          <div class="controls">
+            <input placeholder="企业的联系地址" class="input-xlarge" type="text" name="adress">
+            
+          </div>
+        </div><div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label">联系人姓名</label>
+          <div class="controls">
+            <input placeholder="联系人姓名" class="input-xlarge" type="text" name="contact_name">
+            
+          </div>
+        </div><div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" >联系人手机号</label>
+          <div class="controls">
+            <input placeholder="联系人手机号" class="input-xlarge" type="text" name="phone_num">
+            
+          </div>
+        </div>
+
+          <!-- Text input-->
+          <label class="control-label" >联系人邮箱</label>
+          <div class="controls">
+            <input placeholder="联系人邮箱" class="input-xlarge" type="text" name="email">
+            
+          </div>
+          
+             <!-- Text input-->
+          <label class="control-label" >组织机构代码</label>
+          <div class="controls">
+            <input placeholder="组织机构代码" class="input-xlarge" type="text" name="original_code">
+            
+          </div>
+          <div class="control-group">
+          <label class="control-label">营业执照</label>
+
+          <!-- File Upload -->
+          <div class="controls">
+            <input class="input-file" id="fileInput" type="file" name="verify_info">
+          </div>
+        </div>
+
+    <div class="control-group">
+         
+          <!-- Button -->
+          <div class="controls">
+            <button  type="submit" class="width-35 pull-right btn btn-sm btn-primary">确定</button>
+          </div>
+        </div>
+
+        </div>
+    </fieldset>
+  </form>
+
+								  </div>
+
+										<div class="toolbar center">
+											<a href="#" onclick="show_box('login-box'); return false;" class="back-to-login-link">
+												<i class="icon-arrow-left"></i>
+												回登录页面
+											</a>
+										</div>
+									</div><!-- /widget-body -->
+								</div><!-- /signup-box -->
+							</div><!-- /position-relative -->
+						</div>
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+
+		<script src="/assets/js/jquery-2.0.3.min"></script>
+
+
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+		
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script type="text/javascript">
+			function show_box(id) {
+			 jQuery('.widget-box.visible').removeClass('visible');
+			 jQuery('#'+id).addClass('visible');
+			}
+		</script>
+	
+	<div style="display:none"><script  src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

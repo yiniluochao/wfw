@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="/assets/css/weixin_display.css" rel="stylesheet" />
+
+<title>商品信息</title>
+<style type="text/css">
+	.hb-look{
+		width:33px;
+		position:fixed;
+		bottom:150px;
+		right:5px;
+	}
+	.hb-button{
+		width:50%;
+		left:25%;
+		height:80px;
+		position:absolute;
+		background:url('http://pec.weproduct.cn/assets/images/hongbao_button1.png') no-repeat;
+		background-size:100%;
+		background-position:50%;
+		z-index:99;
+	}
+	.hb-button:hover,.hb-button:active,.hb-button:focus{
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+		tap-highlight-color:rgba(0,0,0,0);
+		background:url('http://pec.weproduct.cn/assets/images/hongbao_button2.png') no-repeat;
+		background-size:100%;
+		background-position:50%;
+	}
+	.hb_bg{
+		width:100%;
+		left:0;
+		position:absolute;
+	}
+	.hb_bt{
+		width:50%;
+		left:25%;
+		position:relative;
+		top:20px;
+	}
+</style>
+</head>
+
+<body>
+
+
+<h4>查询结果</h4>
+{$txt_content}
+<br><br>
+<!-- <a href="{$return_openid}">取证投诉</a> -->
+<h4>产品信息</h4>
+{$html_content}
+
+{$batch_content}
+
+{$company_html}
+
+<!-- <img class="hb_bg" src="http://pec.weproduct.cn/assets/images/hongbao_background.jpg"><a class="hb-button" href={$hongbao_content}></a>
+<img class="hb-look" src="http://pec.weproduct.cn/assets/images/hongbao_logo.png"> -->
+{$hongbao_content}
+</body>
+</html>

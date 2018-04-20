@@ -1,0 +1,631 @@
+.page-content{
+    padding: 0px;
+    width: 100%;
+    height: 1000px;
+    background: #e6e6e6;
+}
+.breadcrumbs{
+    background:#e6e6e6;
+}
+.function_keys{
+    width: 100%;
+    height:40px;
+    background: #e6e6e6;
+}
+.function_keys>span{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    background:white;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 0.5%;
+}
+.function_keys>span:nth-child(1){
+    margin-left: 2.5%;
+    height: 40px;
+    line-height: 40px;
+    color: #00a0e9;
+}
+.function_keys>span:nth-child(2){
+     margin-top: 10px;
+}
+
+
+.screening_condition{
+    width: 100%;
+    height: 250px;
+    background: white;
+    padding-top: 20px;
+    position: relative;
+}
+/*没有多选按钮的CSS*/
+.label1{
+    margin-left:5%;
+    line-height: 30px;
+    height: 30px;
+}
+.inputz0 {
+    width: 215px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    left: 12%;
+    z-index: 9;
+}
+.xiala0{
+    width: 180px;
+    height: 30px;
+    border-radius: 3px;
+    border-right: none;
+    float: left;
+    line-height: 30px;
+    background-color: #6fb3e0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 0.5%;
+    color: white;
+    padding-left: 8px;
+}
+
+.dian0{
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 1px;
+    background-color:#6fb3e0;
+    color: white;
+}
+.pane{
+    width: 210px;
+    height: 100px;
+    display:none;
+    background:#6fb3e0;
+    border-radius: 3px;
+}
+.pane>div{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    padding-left: 10px;
+}
+.pane>div:nth-child(1){
+    height: 10px;
+}
+.pane>div:hover{
+    background: #bcc2e6;
+}
+.pane>div>span{
+    padding-left: 5%;
+}
+.kong{
+    width: 100%;
+    height: 35px;
+}
+/*提示图标*/
+.hint{
+    position: absolute;
+    left: 100%;
+    top:15%;
+    width: 15px;
+    height: 15px;
+}
+.hint>img{
+    width: 100%;
+}
+/*hove*/
+.hint:hover .tishi1,
+.hint:hover .ts_wz1{
+    display: block;
+}
+
+/*第三行倒数第2*/
+/*匡*/
+.tishi1{
+    width: 285px;
+    position: absolute;
+    top:-20px;
+    left:110%;
+    display: none;
+}
+.tishi1>img{
+ width: 100%;
+}
+/*字*/
+.ts_wz1{
+    width: 260px;
+    height: 45px;
+    position: absolute;
+    top:-5px;
+    left:35px;
+    color: #87b87f;
+    display: none;
+}
+/*第三行最后*/
+.tishi2{
+    position: absolute;
+    top:-26px;
+    left:-246px;
+    width:245px;
+}
+.ts_wz2{
+    width: 225px;
+    position: absolute;
+    top:-5px;
+    left:-235px;
+}
+/*第2行最后一个*/
+.tishi3{
+    width: 260px;
+    position: absolute;
+    top:-25px;
+    left:110%;
+    z-index: 20;
+    /*display: none;*/
+}
+.tishi3>img{
+    width: 100%;
+}
+/*字*/
+.ts_wz3{
+    width: 240px;
+    height: 45px;
+    position: absolute;
+    top:-20px;
+    left:35px;
+    color: #87b87f;
+    z-index: 20;
+    /*display: none;*/
+}
+/*最后一个*/
+.hint_move{
+    position: absolute;
+    top: 75%;
+    left: 97%;
+ }
+/*没有多选按钮的CSS结束*/
+
+/*有多选确定按钮的CSS结束*/
+.inputz{
+    width: 215px;
+    height: 30px;
+    position: absolute;
+    top:20px;
+    left: 35%;
+    z-index: 8;
+}
+.xiala{
+    width: 180px;
+    height: 30px;
+    border-radius: 3px;
+    border-right:none ;
+    float: left;
+    line-height: 30px;
+    background-color:#6fb3e0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 0.5%;
+    color: white;
+    padding-left: 8px;
+}
+.dian{
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 1px;
+    background-color:#6fb3e0;
+    color: white;
+}
+.panel1{
+    width: 210px;
+    height: 200px;
+    display:none;
+    background:#6fb3e0 ;
+    border-radius: 3px;
+    overflow: auto;
+}
+.dingw{
+    width: 210px;
+    height: 45px;
+}
+.kong1{
+    height: 10px;
+}
+.queren{
+    width: 45px;
+    height: 26px;
+    line-height: 24px;
+    margin-left: 76%;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+}
+.queren:hover{
+    background: #76bdec;
+}
+.xian{
+    width: 96%;
+    height: 10px;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    margin-bottom: 1.5%;
+}
+.cpmtem{
+    width: 210px;
+    height: 155px;
+    position: absolute;
+    overflow: auto;
+}
+.xuanxiang{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    padding-left: 5px;
+}
+
+.xuanxiang>input{
+    margin-left: 3%;
+    background: black;
+    margin-right:8px;
+    width: 12px;
+    height: 12px;
+    border: none;
+}
+.xuanxiang:hover{
+    background:#8cc2e6;
+}
+/*有多选确定按钮的CSS结束*/
+/*第一行*/
+.inputz1{
+    position: absolute;
+    top:20px;
+    left: 58%;
+    z-index: 7;
+}
+
+/*第二行*/
+.label2{
+    margin-top:2%;
+    margin-left: 5%;
+    font-size: 14px;
+}
+.inputz2{
+    position: absolute;
+    top:30.8%;
+    left: 12%;
+    z-index: 8;
+ }
+.Custom_price{
+    width: 518px;
+    height: 30px;
+    position: absolute;
+    top: 30.8%;
+    left: 35%;
+    display: none;
+}
+.Custom_price>input{
+    width: 60px;
+    height: 30px;
+    border-radius: 1px;
+    margin-right: 5px;
+}
+/*第二行中间*/
+.erzhong{
+    position: absolute;
+    top: 30.8%;
+    left: 35%;
+    display: none;
+    z-index: 7;
+}
+/*第二行最后*/
+.erzui{
+    position: absolute;
+    top: 30.8%;
+    left: 58%;
+    display: none;
+}
+
+/*第三行*/
+.label3{
+    margin-top:2.5%;
+    margin-left:5%;
+    font-size: 14px
+}
+.inputz3{
+    position: absolute;
+    top:52%;
+    left:12%;
+    z-index: 6;
+}
+/*!*请选择生成城市*!*/
+.inputz4{
+    position: absolute;
+    top:52%;
+    left: 35%;
+    z-index: 5;
+    display:none
+}
+/*请选择销售省份*/
+/*.inputz5{*/
+    /*position: absolute;*/
+    /*top:52%;*/
+    /*left: 58%;*/
+    /*z-index: 4;*/
+/*}*/
+/*请选择销售省份*/
+.inputz5{
+    position: absolute;
+    top:52%;
+    left: 35%;
+    z-index: 4;
+}
+
+/*请选择销售城市*/
+.inputz6{
+    position: absolute;
+    top:52%;
+    left: 81%;
+    z-index: 3;
+    display: none;
+}
+/*请选择产品*/
+.inputz7{
+    position: absolute;
+    top:74%;
+    left: 12%;
+    z-index: 3;
+}
+/*请选择年份*/
+.inputz8{
+    position: absolute;
+    top:74%;
+    left: 35%;
+    z-index: 2;
+}
+/*请选择月份*/
+.inputz9{
+    position: absolute;
+    top:74%;
+    left: 58%;
+    z-index: 1;
+    display: none;
+}
+/*价格*/
+.mix_price{
+    width: 90px;
+  position: absolute;
+    top:74%;
+    left: 81%;
+    z-index: 0;
+    outline: none;
+}
+.l_yi{
+    display:block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top:74%;
+    left: 87.9%;
+}
+.max_price{
+    width: 90px;
+    position: absolute;
+    top:74%;
+    left: 89.3%;
+    z-index: 0;
+    outline: none;
+    border: none;
+}
+.Nagvis{
+    width:100% ;
+    height: 200px;
+
+}
+.Nagvis>div:nth-child(1){
+    width: 100%;
+    height: 200px;
+    padding-top: 50px;
+}
+/*开始分析*/
+.start_analyze{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    border-radius: 3px;
+    color: #6fb3e0;
+    margin: 0 auto;
+    text-align: center;
+}
+.start_analyze:hover{
+    color: #619cc3;
+    font-weight: bolder;
+    border: 1px solid #619cc3;
+}
+/*展开分析*/
+.unfold_analyze{
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #6fb3e0;
+    position: absolute;
+    left: 53.5%;
+    z-index: 10;
+    display: none;
+}
+.unfold_analyze:hover{
+    color: #619cc3;
+    font-weight: bolder;
+    border: 1px solid #619cc3
+}
+/*业务逻辑实现*/
+.yizhong,.yizui{
+    display: none;
+}
+.erzui{
+    z-index: 6;
+}
+.legend{
+    width: 94%;
+    margin: 0 auto;
+    height: 400px;
+    background: white;
+}
+.pdf{
+    width: 60px;
+    height: 34px;
+    line-height: 34px;
+    margin-left: 42px;
+    margin-top: 30px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background: #87b87f;
+}
+#main1,#main2,#main3,#main4{
+    display: none;
+}
+div{
+    cursor: pointer;
+}
+.clert_1{
+    position: absolute;
+    left: 92%;top: 8%;
+    width: 50px;
+    height: 30px;
+    border-radius: 3px;
+    background:#6fb3e0;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*地图*/
+.tux{
+    float: left;
+    margin-left:4%;
+}
+.ztu{
+    float: left;
+    width:90px;
+    height:115px ;
+    margin-left: 1%;
+    margin-right: 1%;
+    position:relative;
+}
+
+.ltu{
+    width:88px;
+    height:85px ;
+}
+.ltu>img{
+    width: 100%;
+    padding: 5%;
+
+}
+.gou{
+    width: 16px;
+    height: 16px;
+    position:absolute ;
+    left: 82%;top:-3.5%;
+    display:none;
+}
+.gou>img{
+    width: 16px;
+    height: 16px;
+}
+.tishiyu{
+    color: #6fb3e0;
+    font-size: 10px;
+}
+/*.tishikuang{*/
+    /*width: 80px;*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    /*text-align: center;*/
+    /*position: absolute;*/
+    /*top:0px;*/
+    /*left:115%;*/
+    /*background: #6FB3E0;*/
+    /*color: white;*/
+    /*border-radius: 3px ;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

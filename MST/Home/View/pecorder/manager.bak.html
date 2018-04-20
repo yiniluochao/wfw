@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>控制台 微防伪商品信息系统</title>
+<meta name="keywords" content="微防伪商品信息系统" />
+<meta name="description" content="微防伪商品信息系统" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- basic styles -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+<!--[if IE 7]>
+		  <link rel="stylesheet" href="/assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+<link rel="stylesheet" href="/assets/css/ace.min.css" />
+<link rel="stylesheet" href="/assets/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/assets/css/ace-skins.min.css" />
+
+<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="/assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+<!-- ace settings handler -->
+
+<script src="/assets/js/ace-extra.min.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+<div class="navbar navbar-default" id="navbar"> 
+  <script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+  <div class="navbar-container" id="navbar-container">
+    <div class="navbar-header pull-left"> <a href="/" class="navbar-brand"> <img src="/assets/images/logo.png" style="height:60px;"></img> </a><!-- /.brand --> 
+    	</div>
+    <!-- /.navbar-header --><!-- /.navbar-header --> 
+  </div>
+  <!-- /.container --> 
+</div>
+<div class="main-container" id="main-container"> 
+  <script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+  <div class="main-container-inner"> <include file="Public/left" />
+    <div class="main-content">
+      <div class="breadcrumbs" id="breadcrumbs"> 
+        <script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+        <ul class="breadcrumb">
+          <li> <i class="icon-home home-icon"></i> <a href="/">首页</a> </li>
+          <li class="active">产品身份码订单</li>
+        </ul>
+        <!-- .breadcrumb --> 
+        
+        <!-- #nav-search --> 
+      </div>
+      <div class="page-content"> 
+        <!-- /.page-header -->
+        
+        <div class="row">
+          <div class="col-xs-12"> 
+            <!-- PAGE CONTENT BEGINS -->
+            
+            <div class="widget-box">
+              <div class="widget-header widget-header-small">
+                <h5 class="lighter">订单查找</h5>
+              </div>
+              <div class="widget-body">
+                <div class="widget-main">
+                  <form class="form-search" method="post" action="/pecorder/search">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="input-group">
+                          <input class="form-control search-query" name="key" placeholder="订单查找(输入订单号）" type="text">
+                          <span class="input-group-btn">
+                          <button type="submit" class="btn btn-purple btn-sm">查找<i class="icon-search icon-on-right bigger-110"></i> </button>
+                          </span> </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+                   <div class="widget-box">
+                  <div class="widget-header header-color-grey">
+                    <h5 class="bigger lighter">
+                    <a type="button" href="/pecorder/newone/{$bid}" class="btn btn-success">新增订单</a>
+                    </h5>
+                     <label class="control-label" >{$product_code}</label>
+                      
+                  </div>
+                </div>
+            <!-- /row -->
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="table-responsive">
+                  <table id="sample-table-1" class="table table-striped table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>产品名称</th>
+                        <th>产品代码</th>
+                        <th>批次代码</th>
+                        <th>产品身份码订单号</th>
+                        <th>数量</th>
+                        <th>创建时间</th>
+                       <th>操作</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <volist name="list" id="vo">
+                        <tr>
+                          <td>{$vo.product_name}</td>
+                          <td>{$vo.product_code}</td>
+                          <td>{$vo.batch_code}</td>
+                          <td>{$vo.pec_order_code}</td>
+                          <td>{$vo.sum}</td>
+                          <td>{$vo.createtime}</td>
+                           
+                          <td><div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                                  <a href="/pecorder/view/{$vo.pec_order_id}"target="_self" class="btn btn-xs btn-grey"><i class="icon-book bigger-120"></i>状态查看</a>
+                                  <a href="/pecorder/edit/{$vo.pec_order_id}"target="_self" class="btn btn-xs btn-grey"><i class="icon-edit bigger-120"></i>订单更改</a>
+                                  
+                                   
+                         </td>
+                        </tr>
+                      </volist>
+                    </tbody>
+                  </table>
+                  <div class="row text-center">
+                    <div class="btn-group" >{$page}</div>
+                  </div>
+                </div>
+                <!-- /.table-responsive --> 
+              </div>
+              <!-- /span --> 
+            </div>
+            
+            <!-- PAGE CONTENT ENDS --> 
+          </div>
+          <!-- /.col --> 
+        </div>
+        <!-- /.row --> 
+      </div>
+      <!-- /.page-content --> 
+    </div>
+    <!-- /.main-content --> 
+    
+    <!-- /#ace-settings-container --> 
+  </div>
+  <!-- /.main-container-inner --> 
+  
+</div>
+<!-- /.main-container --> 
+
+<script src="/assets/js/jquery-1.10.2.min.js"></script> 
+<script src="/assets/js/bootstrap.min.js"></script> 
+<script src="/assets/js/typeahead-bs2.min.js"></script> 
+
+<!-- page specific plugin scripts --> 
+
+<!--[if lte IE 8]>
+		  <script src="/assets/js/excanvas.min.js"></script>
+		<![endif]--> 
+
+<script src="/assets/js/jquery-ui-1.10.3.custom.min.js"></script> 
+<script src="/assets/js/jquery.ui.touch-punch.min.js"></script> 
+<script src="/assets/js/jquery.slimscroll.min.js"></script> 
+<script src="/assets/js/jquery.easy-pie-chart.min.js"></script> 
+<script src="/assets/js/jquery.sparkline.min.js"></script> 
+<script src="/assets/js/flot/jquery.flot.min.js"></script> 
+<script src="/assets/js/flot/jquery.flot.pie.min.js"></script> 
+<script src="/assets/js/flot/jquery.flot.resize.min.js"></script> 
+
+<!-- ace scripts --> 
+
+<script src="/assets/js/ace-elements.min.js"></script> 
+<script src="/assets/js/ace.min.js"></script> 
+
+<!-- inline scripts related to this page -->
+</body>
+</html>

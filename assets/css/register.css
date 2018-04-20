@@ -1,0 +1,24 @@
+*{margin:0;font-family: "Microsoft YaHei";font-size: 14px;}
+.mainbg{position: absolute; background: url(./images/bg.jpg) no-repeat; background-size:100% 100%;width: 100%;height: 100%;}
+.registerbox{height: 400px;width: 300px; position: absolute; right: 10%;top: 18%;text-align: center;vertical-align: middle;border:solid 1.5px #9b9b9b;border-radius: 1.5%;background-color: #eeeeee;}
+.register{ height: 350px;width: 260px;margin: 0 auto;}
+.register div{margin: 10px;}
+.register p{font-size: 20px; margin-top: 20px;margin-bottom: 20px;color: #4c9efa;}
+#loading{border:0;background-color: #4c9efa;height: 30px; width: 235px;border-radius: 4px;clear: both;color: white;}
+#loading:hover{background-color: #66acfa;}
+#sign{display:inline-block;border:solid 2px #4c9efa;width: 60px;border-radius: 4px;color: #4c9efa;}
+#sign:hover{background-color: #66acfa;color: white;}
+.check label{margin-bottom: 10px;width:100%;}
+.check label a{float:right;line-height:60px;}
+.inp{border:solid 1.5px #d7d6d6;border-radius: 4px;height: 25px; width: 235px;}
+.sign{position: absolute;bottom:10px;left:80px;}
+#inpcode{border-radius: 4px;width: 80px;border: solid 1.5px #b9b9b9;}
+a{text-decoration:none;color: black;}
+.findkeybox{height: 400px;width: 300px; position: absolute; right: 10%;top: 18%;text-align: center;vertical-align: middle;border:solid 1.5px #a8a8a8;border-radius: 1.5%;background-color: #eeeeee;display: none;z-index: 99;}
+.findkey{height: 336px;width: 235px;margin: 0 auto;}
+.findkey p{font-size: 20px; margin-top: 20px;margin-bottom: 20px;color: #4c9efa;}
+.greyline{border-bottom:solid 1.5px #d7d6d6;}
+#sending{float: right;position: relative;top: 20px; border:0;background-color: #4c9efa;height: 30px; width: 80px;border-radius: 4px;clear: both;color: white;}
+#sending:hover{background-color: #66acfa;}
+.return{position: absolute;width: 100%;height: 43px;left:-1px;color: #4c9efa;border-radius: 4px;border: solid 1.5px #4c9efa;line-height:43px;font-size: 16px;cursor: pointer; }
+#code{width:150px;float:left;}

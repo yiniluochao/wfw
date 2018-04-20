@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>控制台 产品身份码系统</title>
+		<meta name="keywords" content="微防伪商品信息系统" />
+		<meta name="description" content="微防伪商品信息系统" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- basic styles -->
+		<link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+        
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="/assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+        
+		<link rel="stylesheet" href="/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="/assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="/assets/css/ace-skins.min.css" />
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="/assets/css/ace-ie.min.css" />
+		<![endif]-->
+        
+		<!-- ace settings handler -->
+
+		<script src="/assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="navbar navbar-default" id="navbar">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="/" class="navbar-brand">
+							<img src="/assets/images/logo.png" style="height:60px;"></img>
+					</a><!-- /.brand -->
+							<ul class="white user-infotop">
+								<span class="user-info">
+									<big>欢迎,{$user_name}</big>	</span>
+							</ul>
+				</div><!-- /.navbar-header --><!-- /.navbar-header -->
+		
+			</div><!-- /.container -->
+			
+		
+			
+		</div>
+
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="main-container-inner">
+            <include file="Public/left" />
+				<div class="main-content">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home home-icon"></i>
+								<a href="/">首页</a>
+							</li>
+							<li class="active">产品身份码查询</li>
+						</ul><!-- .breadcrumb -->
+
+						<!-- #nav-search -->
+					</div>
+
+					<div class="page-content">
+						<!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+
+						
+
+								<!-- /row -->
+
+					
+								<div class="row">
+              <div class="col-sm-10">
+                <div class="widget-box light-border">
+                  <div class="widget-header header-color-blue2">
+                    <h5 class="smaller">产品身份码查询</h5>
+                   
+                  </div>
+                  <div class="widget-body">
+                    <div class="widget-main padding-6" style="height:300px;">
+                    
+                        <form class="form-horizontal"method="post" action="/index/pec_search">
+                      <fieldset>
+                    
+                      <div class="control-group">
+
+                         
+                            <div class="controls">
+                                <input class="input-xlarge search-query"  placeholder="请输入12位产品身份码" type="text" name="pec_id">
+                                 <button type="submit" class="btn btn-purple btn-sm">查找<i class="icon-search icon-on-right bigger-110"></i> </button>
+                             
+                            </div>
+
+                          </div>
+                     <div class="controls">
+                               
+                             </div>
+                           
+                      </fieldset>
+                    </form>
+                    <p class="alert alert-success">{$out_data}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+								<div class="hr hr32 hr-dotted"></div><!-- /row -->
+
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+
+				<!-- /#ace-settings-container -->
+			</div><!-- /.main-container-inner -->
+
+			<div style="display:none" id="current_form">3</div>
+		</div><!-- /.main-container -->
+        
+       
+        <script src="/assets/js/jquery-1.10.2.min.js"></script>
+		<script src="/assets/js/bootstrap.min.js"></script>
+		<script src="/assets/js/typeahead-bs2.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="/assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+		<script src="/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="/assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="/assets/js/jquery.slimscroll.min.js"></script>
+		<script src="/assets/js/jquery.easy-pie-chart.min.js"></script>
+		<script src="/assets/js/jquery.sparkline.min.js"></script>
+		<script src="/assets/js/flot/jquery.flot.min.js"></script>
+		<script src="/assets/js/flot/jquery.flot.pie.min.js"></script>
+		<script src="/assets/js/flot/jquery.flot.resize.min.js"></script>
+
+		<!-- ace scripts -->
+
+		<script src="/assets/js/ace-elements.min.js"></script>
+		<script src="/assets/js/ace.min.js"></script>
+        
+		<!-- inline scripts related to this page -->
+</body>
+</html>
+

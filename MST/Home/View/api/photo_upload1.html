@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>取证上传</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/sign.css">
+	<script type="text/javascript" src="/assets/js/verify.js"></script>
+	 <script type="text/javascript" src="/assets/js/jquery-2.0.3.min.js"></script>
+		<!-- basic styles -->
+
+		<link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+		<!-- page specific plugin styles -->
+
+		<!-- fonts -->
+
+		
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href="/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="/assets/css/ace-rtl.min.css" />
+</head>
+<body>
+	<div>
+		<div class="signbox">
+			<div>
+				<p class="title" style="font-size: 22px;font-weight: bold;">微防伪商品信息系统</p>
+			</div>
+			<div class="sign">
+				<p class="title" style="font-size: 18px;font-weight: bold;">取证上传</p>
+				<font color="red">{$error}</font>
+				<div style="width: 60%;margin: 20px auto 40px auto;">
+				<form action="/user/register_deal" enctype="multipart/form-data" method="post">
+				<div class="inputbox">
+					<div>
+					
+					<label>我的位置:</label><p style="color:red" id="usercheck"></p>
+					<input type="hidden" value='{$username}' id='username'>
+					<button type="button" onclick="getLocation();">点击定位</button>
+					</div>
+					<div>
+					<input class="input-file"  name="images[]" accept="image/*" type="file">
+					</div>
+				
+					<button type="submit" id="done">确定</button>
+			</div>
+				</form>
+				</div>
+			</div>
+		</div>
+		<div style="position: fixed;bottom: 1%;left: 45%;text-align: center;left">
+			<p>©成都菲普迪斯科技有限公司</p>
+		</div>
+	</div>
+	<script src="/assets/js/jquery-2.0.3.min.js"></script>
+
+
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+		
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script type="text/javascript">
+			function show_box(id) {
+			 jQuery('.widget-box.visible').removeClass('visible');
+			 jQuery('#'+id).addClass('visible');
+			}
+		</script>
+		<script type="text/javascript">
+			function getLocation(){
+				var username = $('#username').val();
+				//alert(username);
+				$.ajax({
+						url:"/api/getLocation",
+						type:"POST",
+						data:"username="+username,
+						dataType:"text",
+						success:function(data){
+							
+							$("#usercheck").text(data);
+						}
+						
+					});
+			}
+		
+		</script>
+	
+	<div style="display:none"><script  src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

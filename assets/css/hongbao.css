@@ -1,0 +1,73 @@
+.company-box{
+	margin:10px auto;
+	width:60%;
+}
+.company-box input{
+	margin-left:20px;
+	width:70%;
+}
+.company-box input[type='file']{
+	margin:10px auto;
+}
+.hb-box{
+	padding:20px;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+.mr-box{
+	margin:10px 10px;
+	width:100%;
+}
+.mr-box p{
+	width:12%;
+	display:inline-block;
+}
+.mr-box input{
+	width:30%;
+}
+.table td a img{
+	width:50px;
+}
+.table td,.table th{
+	text-align:center;
+}
+
+/*ºì°üÁÐ±í*/
+.hongbao_box{
+	width:200px;
+	height:90px;
+	margin:10px 15px;
+	float:left;
+	color:#fff;
+	border-radius:10px;
+}
+.hongbao_box.box1{
+	background-color:#98cc3b;
+}
+.hongbao_box.box2{
+	background-color:#00c0f1;
+}
+.hongbao_box.box3{
+	background-color:#ffcc00;
+}
+.hongbao_box.box4{
+	background-color:#fe9900;
+}
+.hongbao_box.box5{
+	background-color:#f47264;
+}
+.hongbao_num{
+	position:relative;
+	top:10px;
+	font-size:26px;
+	width:200px;
+	text-align:center;
+}
+.hongbao_text{
+	position:relative;
+	top:10px;
+	font-size:18px;
+	width:200px;
+	text-align:center;
+	font-weight:100;
+}

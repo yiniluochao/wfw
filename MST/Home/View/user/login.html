@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>微防伪系统</title>
+		<link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+		<script type="text/javascript" src="/assets/js/verify.js"></script>
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+		<!-- page specific plugin styles -->
+
+		<!-- fonts -->
+
+		
+
+		<!-- ace styles -->
+
+
+	    <link rel="stylesheet" href="/assets/css/ace-rtl.min.css" /> 
+	<link rel="stylesheet" type="text/css" href="/assets/css/register.css">
+</head>
+<body>
+	<div class="mainbg">
+		<div class="registerbox">
+			<div class="register">
+			<p>企业客户登录</p>
+			<form action="/user/loginIn" method="post">
+			<div><label><input class="inp" type="text" name="login" placeholder=" 用户名"></label></div>
+			<div><label><input class="inp" type="password" name="password" placeholder=" 密码"></label></div>
+			<div style="text-align: left;">
+				<input type="checkbox" style="margin-right: 10px;">
+				<label ><b>记住我</b></label>
+				<b id="return_findkey" style="float: right;cursor: pointer;">忘记密码？</b>
+			</div>
+			<div class="check">
+				<label><b style="">输入下方验证码</b>
+				<input type="code" name="code" class="inp" style="width:125px;margin-left:10px;">	</label>
+				<label><img src="{:U('Verify/verifier','','')}" id="code"><a href="javascript:void(change_code(this));"><b>看不清</b></a></label>
+				
+			</div>
+			<button type="submit" id="loading" >登录</button>
+			</form>
+			<div class="sign">
+			<span>没有帐号？</span><a href="/user/register" id="sign" >注册</a>
+			</div>
+			</div>
+		</div>
+				<div class="findkeybox">
+			<div class="findkey">
+				<p>
+				重置密码
+				</p>
+				<div class="greyline">
+				</div>
+				<div>
+				<form action="/user/findpw" method="post">
+					<p style="color: #444444;text-align: left;font-size: 18px;">输入验证邮箱</p>
+					<input type="text" name="email" class="inp" placeholder="  邮箱">
+					<button type="submit" id="sending">寄给我</button>
+				</form>
+				</div>
+			</div>
+			<div class="return" id="return_register">
+						<img  style="vertical-align: baseline;width: 22px;" src="/assets/css/images/return_register.png">
+						返回登录界面
+			</div>
+		</div>
+		<div style="position: fixed;bottom: 1%;left: 45%;text-align: center;left">
+		<div style="position: fixed;bottom: 1%;left: 45%;text-align: center;left">
+			<p>©成都菲普迪斯科技有限公司</p>
+		</div>
+	</div>
+	<script src="/assets/js/jquery-2.0.3.min.js"></script>
+
+
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+		
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+	<script type="text/javascript">
+	$(function(){	
+		$("#return_findkey").click(function(){
+			$(".findkeybox").css("display","block");
+		});
+		$("#return_register").click(function(){
+			$(".findkeybox").hide();
+		});
+	});
+	</script>
+	<div style="display:none"><script  src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

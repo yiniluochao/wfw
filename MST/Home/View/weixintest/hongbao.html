@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>红包</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		html,body{height: 100%;overflow: hidden;margin: 0;font-family: "microsoft yahei";}
+		.main{
+			width: 100%;
+			height: 100%;
+			background-image: url("http://pec.weproduct.cn/assets/css/images/hongbao.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.logo{
+			position: absolute;
+			width: 100%;
+			top: 7%;
+			animation: logomove;
+			animation-delay: 0.1s;
+			animation-duration: 2s;
+			-webkit-animation: logomove;
+			-webkit-animation-delay: 0.1s;
+			-webkit-animation-duration: 2s;
+		}
+		.logo img{
+			position: relative;
+			border-radius: 50%;
+			width: 30%;
+			left: 35%;
+		}
+		.text{
+			position: absolute;
+			top: 42%;
+			width: 94%;
+			height: 25%;
+			left: 3%;
+		}
+		.yellow{
+			color: #ffdd3d;
+			font-size: 20px;
+			font-weight: 600;
+		}
+		.yellow.right{
+			position: relative;
+			top: 30px;
+			right: 0;
+			text-align: right;
+		}
+		.company{
+			position: relative;
+			color: #fff;
+			top: 15px;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 40px;
+			text-align: center;
+			animation: companyfadein 2s ease-in-out;
+			-webkit-animation: companyfadein 2s ease-in-out;
+			-moz-animation: companyfadein 2s ease-in-out;
+		}
+		.money-box{
+			width: 100%;
+			height: 100%;
+		}
+		.money{
+			width: 10%;
+			position: absolute;
+			top: -100px;
+		}
+		.m1{left: 3%;animation:moneydrop 2.5s ease-in-out 1s;-webkit-animation:moneydrop 2.5s ease-in-out 1s;-moz-animation:moneydrop 2.5s ease-in-out 1s;}
+		.m2{left: 8%;animation:moneydrop 2.5s sease-in-out 0.4s;-webkit-animation:moneydrop 2.5s sease-in-out 0.4s;-moz-animation:moneydrop 2.5s sease-in-out 0.4s;}
+		.m3{left: 12%;animation:moneydrop 2.5s ease-in-out 0.3s;-webkit-animation:moneydrop 2.5s ease-in-out 0.3s;-moz-animation:moneydrop 2.5s ease-in-out 0.3s;}
+		.m4{left: 22%;animation:moneydrop 2.5s ease-in-out 1.3s;-webkit-animation:moneydrop 2.5s ease-in-out 1.3s;-moz-animation:moneydrop 2.5s ease-in-out 1.3s;}
+		.m5{left: 34%;animation:moneydrop 2.5s ease-in-out 0s;-webkit-animation:moneydrop 2.5s ease-in-out 0s;-moz-animation:moneydrop 2.5s ease-in-out 0s;}
+		.m6{left: 56%;animation:moneydrop 2.5s ease-in-out 0.7s;-webkit-animation:moneydrop 2.5s ease-in-out 0.7s;-moz-animation:moneydrop 2.5s ease-in-out 0.7s;}
+		.m7{left: 62%;animation:moneydrop 2.5s ease-in-out 0.2s;-webkit-animation:moneydrop 2.5s ease-in-out 0.2s;-moz-animation:moneydrop 2.5s ease-in-out 0.2s;}
+		.m8{left: 68%;animation:moneydrop 2.5s ease-in-out 1.1s;-webkit-animation:moneydrop 2.5s ease-in-out 1.1s;-moz-animation:moneydrop 2.5s ease-in-out 1.1s;}
+		.m9{left: 70%;animation:moneydrop 2.5s ease-in-out 0.1s;-webkit-animation:moneydrop 2.5s ease-in-out 0.1s;-moz-animation:moneydrop 2.5s ease-in-out 0.1s;}
+		.m10{left: 77%;animation:moneydrop 2.5s ease-in-out 0.9s;-webkit-animation:moneydrop 2.5s ease-in-out 0.9s;-moz-animation:moneydrop 2.5s ease-in-out 0.9s;}
+		.m11{left: 84%;animation:moneydrop 2.5s ease-in-out 0.6s;-webkit-animation:moneydrop 2.5s ease-in-out 0.6s;-moz-animation:moneydrop 2.5s ease-in-out 0.6s;}
+		@keyframes logomove{
+			0%{transform:translateY(-150%);}
+			100%{transform:translateY(0);}
+		}
+	    @-webkit-keyframes logomove{
+			0%{top:-150px;}
+			100%{top:7%;}
+		}
+		@keyframes moneydrop{
+			0%{top: -100px;}
+			100%{top:110%;}
+		}
+		@-webkit-keyframes moneydrop{
+			0%{top: -100px;}
+			100%{top:110%;}
+		}
+		@-moz-keyframes moneydrop{
+			0%{top: -100px;}
+			100%{top:110%;}
+		}
+		@keyframes companyfadein{
+			0%{font-size: 12px}
+			75%{font-size: 25px}
+			100%{font-size: 24px}
+		}
+		@-webkit-keyframes companyfadein{
+			0%{font-size: 12px}
+			75%{font-size: 25px}
+			100%{font-size: 24px}
+		}
+		@-moz-keyframes companyfadein{
+			0%{font-size: 12px}
+			75%{font-size: 25px}
+			100%{font-size: 24px}
+		}
+	</style>
+</head>
+<body>
+	<div class="main" id="mainbody">
+		<div class="logo">
+			<img src="http://pec.weproduct.cn/upload/{$company_logo}">
+		</div>
+		<div class="text">
+			<div class="yellow left">获得了由</div>
+			<div class="company">{$company_name}</div>
+			<div class="yellow right">提供的现金红包</div>
+		</div>
+		<div class="money-box">
+			<img class="money m1" src="http://pec.weproduct.cn/assets/css/images/logo(1).png">
+			<img class="money m2" src="http://pec.weproduct.cn/assets/css/images/logo(1).png">
+			<img class="money m3" src="http://pec.weproduct.cn/assets/css/images/logo(1).png">
+			<img class="money m4" src="http://pec.weproduct.cn/assets/css/images/logo(1).png">
+			<img class="money m5" src="http://pec.weproduct.cn/assets/css/images/logo(1).png">
+			<img class="money m6" src="http://pec.weproduct.cn/assets/css/images/logo(1).png">
+			<img class="money m7" src="http://pec.weproduct.cn/assets/css/images/logo(1).png">
+			<img class="money m8" src="http://pec.weproduct.cn/assets/css/images/logo(1).png">
+			<img class="money m9" src="http://pec.weproduct.cn/assets/css/images/logo(1).png">
+			<img class="money m10" src="http://pec.weproduct.cn/assets/css/images/logo(1).png">
+			<img class="money m11" src="http://pec.weproduct.cn/assets/css/images/logo(1).png">
+		</div>
+	</div>
+</body>
+</html>
