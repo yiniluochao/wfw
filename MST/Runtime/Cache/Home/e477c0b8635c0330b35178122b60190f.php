@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -39,7 +39,7 @@
 			<div class="check">
 				<label><b style="">输入下方验证码</b>
 				<input type="code" name="code" class="inp" style="width:125px;margin-left:10px;">	</label>
-				<label><img src="{:U('Verify/verifier','','')}" id="code"><a href="javascript:void(change_code(this));"><b>看不清</b></a></label>
+				<label><img src="<?php echo U('Verify/verifier','','');?>" id="code"><a href="javascript:void(change_code(this));"><b>看不清</b></a></label>
 				
 			</div>
 			-->

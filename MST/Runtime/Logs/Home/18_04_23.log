@@ -1,0 +1,1053 @@
+[ 2018-04-23T19:02:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002303s ]
+
+[ 2018-04-23T19:02:25+08:00 ] 127.0.0.1 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001775s ]
+
+[ 2018-04-23T19:02:25+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+
+[ 2018-04-23T19:02:31+08:00 ] 127.0.0.1 /user/loginIn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `mst_company_user` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `mst_company_user` WHERE ( login = 'admin' and password = '69c5fcebaa65b560eaf06c3fbeb481ae44b8d618' ) LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-04-23T19:02:32+08:00 ] 127.0.0.1 /index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `mst_edit_company` [ RunTime:0.0027s ]
+SQL: SELECT `photo_url` FROM `mst_edit_company` WHERE ( cid = '6' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `mst_company` [ RunTime:0.0025s ]
+SQL: SELECT `company_name` FROM `mst_company` WHERE ( uid = '6' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `mst_product` WHERE ( cid = '6' ) LIMIT 3   [ RunTime:0.0004s ]
+SQL: select * from mst_batch,mst_product where mst_batch.pid=mst_product.pid and mst_batch.cid = 6 order by mst_batch.createtime desc limit 3 [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2018-04-23T19:03:09+08:00 ] 127.0.0.1 /index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `mst_edit_company` [ RunTime:0.0008s ]
+SQL: SELECT `photo_url` FROM `mst_edit_company` WHERE ( cid = '6' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mst_company` [ RunTime:0.0005s ]
+SQL: SELECT `company_name` FROM `mst_company` WHERE ( uid = '6' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mst_product` WHERE ( cid = '6' ) LIMIT 3   [ RunTime:0.0004s ]
+SQL: select * from mst_batch,mst_product where mst_batch.pid=mst_product.pid and mst_batch.cid = 6 order by mst_batch.createtime desc limit 3 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2018-04-23T19:03:14+08:00 ] 127.0.0.1 /pecorder/manager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `mst_batch` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mst_pec_order` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mst_pec_order` WHERE ( cid='6' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: select * from mst_batch,mst_product,mst_pec_order where mst_product.pid = mst_batch.pid and mst_batch.bid = mst_pec_order.bid  order by mst_pec_order.createtime desc [ RunTime:0.0112s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 208 行.
+NOTIC: [8] Undefined variable: bid /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 280 行.
+NOTIC: [8] Undefined variable: product_code /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2018-04-23T19:03:22+08:00 ] 127.0.0.1 /weixin/hongbao_display
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 89 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 90 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 98 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 99 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 100 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 109 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 110 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 111 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 125 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 126 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 146 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 147 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 157 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 158 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 159 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 173 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 174 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 200 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 210 行.
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 212 行.
+NOTIC: [8] Undefined variable: company_name /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 293 行.
+NOTIC: [8] Undefined variable: onece_money /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 310 行.
+NOTIC: [8] Undefined variable: bless_message /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 318 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2018-04-23T19:03:24+08:00 ] 127.0.0.1 /weixin/hongbao_display
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 89 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 90 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 98 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 99 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 100 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 109 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 110 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 111 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 125 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 126 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 146 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 147 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 157 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 158 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 159 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 173 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 174 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 200 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 210 行.
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 212 行.
+NOTIC: [8] Undefined variable: company_name /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 293 行.
+NOTIC: [8] Undefined variable: onece_money /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 310 行.
+NOTIC: [8] Undefined variable: bless_message /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/5f82f53cf90eb8dd8b7da0748db201be.php 第 318 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2018-04-23T19:03:26+08:00 ] 127.0.0.1 /index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `mst_edit_company` [ RunTime:0.0007s ]
+SQL: SELECT `photo_url` FROM `mst_edit_company` WHERE ( cid = '6' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mst_company` [ RunTime:0.0006s ]
+SQL: SELECT `company_name` FROM `mst_company` WHERE ( uid = '6' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mst_product` WHERE ( cid = '6' ) LIMIT 3   [ RunTime:0.0004s ]
+SQL: select * from mst_batch,mst_product where mst_batch.pid=mst_product.pid and mst_batch.cid = 6 order by mst_batch.createtime desc limit 3 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-04-23T19:03:46+08:00 ] 127.0.0.1 /auth/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `mst_company_user` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mst_company_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: select * from mst_company,mst_company_user where mst_company.uid=mst_company_user.uid  order by mst_company.createtime desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 85 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 86 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 94 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 95 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 96 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 105 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 106 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 107 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 121 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 122 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 142 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 143 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 153 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 154 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 155 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 169 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 170 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 196 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 206 行.
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 208 行.
+NOTIC: [8] Undefined variable: page /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0790830ee8877442d1467c37bd8635a4.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2018-04-23T20:03:25+08:00 ] 127.0.0.1 /user/loginout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+
+[ 2018-04-23T20:03:25+08:00 ] 127.0.0.1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2018-04-23T20:04:10+08:00 ] 127.0.0.1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Undefined variable: error /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/af8df0d0adb0760a358d2425865b7c50.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2018-04-23T20:04:10+08:00 ] 127.0.0.1 /index.php?m=&c=Verify&a=verifier
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+
+[ 2018-04-23T20:05:02+08:00 ] 127.0.0.1 /user/loginIn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `mst_company_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mst_company_user` WHERE ( login = 'admin' and password = '69c5fcebaa65b560eaf06c3fbeb481ae44b8d618' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-04-23T20:05:02+08:00 ] 127.0.0.1 /index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `mst_edit_company` [ RunTime:0.0007s ]
+SQL: SELECT `photo_url` FROM `mst_edit_company` WHERE ( cid = '6' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mst_company` [ RunTime:0.0005s ]
+SQL: SELECT `company_name` FROM `mst_company` WHERE ( uid = '6' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mst_product` WHERE ( cid = '6' ) LIMIT 3   [ RunTime:0.0005s ]
+SQL: select * from mst_batch,mst_product where mst_batch.pid=mst_product.pid and mst_batch.cid = 6 order by mst_batch.createtime desc limit 3 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-04-23T20:05:10+08:00 ] 127.0.0.1 /pecorder/manager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `mst_batch` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mst_pec_order` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mst_pec_order` WHERE ( cid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select * from mst_batch,mst_product,mst_pec_order where mst_product.pid = mst_batch.pid and mst_batch.bid = mst_pec_order.bid  order by mst_pec_order.createtime desc [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 208 行.
+NOTIC: [8] Undefined variable: bid /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 280 行.
+NOTIC: [8] Undefined variable: product_code /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2018-04-23T20:28:57+08:00 ] 127.0.0.1 /pecorder/manager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `mst_batch` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mst_pec_order` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mst_pec_order` WHERE ( cid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select * from mst_batch,mst_product,mst_pec_order where mst_product.pid = mst_batch.pid and mst_batch.bid = mst_pec_order.bid  order by mst_pec_order.createtime desc [ RunTime:0.0104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 208 行.
+NOTIC: [8] Undefined variable: bid /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 280 行.
+NOTIC: [8] Undefined variable: product_code /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2018-04-23T20:29:46+08:00 ] 127.0.0.1 /pecorder/view/253
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+SQL: SHOW COLUMNS FROM `mst_pec_order` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mst_pec_order` WHERE ( pec_order_id=253 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mst_batch` [ RunTime:0.0006s ]
+SQL: SELECT `batch_code` FROM `mst_batch` WHERE ( bid = 52 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `mst_batch` WHERE ( bid = 52 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2018-04-23T20:30:53+08:00 ] 127.0.0.1 /pecorder/manager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `mst_batch` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mst_pec_order` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mst_pec_order` WHERE ( cid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select * from mst_batch,mst_product,mst_pec_order where mst_product.pid = mst_batch.pid and mst_batch.bid = mst_pec_order.bid  order by mst_pec_order.createtime desc [ RunTime:0.0105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 208 行.
+NOTIC: [8] Undefined variable: bid /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 280 行.
+NOTIC: [8] Undefined variable: product_code /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2018-04-23T20:31:08+08:00 ] 127.0.0.1 /pecorder/newone/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mst_product` WHERE ( cid = '6' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mst_record_number` [ RunTime:0.0039s ]
+SQL: SELECT `date` FROM `mst_record_number` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `mst_remain_number` [ RunTime:0.0031s ]
+SQL: SELECT `uid` FROM `mst_remain_number` WHERE ( date='2018-04-23' )  [ RunTime:0.0016s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/luochao/PhpProject/wfw/MST/Home/Common/function.php 第 1897 行.
+SQL: INSERT INTO `mst_remain_number` (`uid`,`eight`,`nine`,`ten`,`eleven`,`twelve`,`date`) VALUES ('6','1000','10000','100000','1000000','10000000','2018-04-23') [ RunTime:0.0045s ]
+SQL: SELECT `eight`,`nine`,`ten`,`eleven`,`twelve` FROM `mst_remain_number` WHERE `uid` = 6 AND `date` = '2018-04-23'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: batch_code /Users/luochao/PhpProject/wfw/MST/Home/Controller/PecorderController.class.php 第 252 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/6cff095d72489697ad6709524c82a0af.php 第 240 行.
+NOTIC: [8] Undefined variable: sum /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/6cff095d72489697ad6709524c82a0af.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2018-04-23T20:33:31+08:00 ] 127.0.0.1 /pecorder/manager/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `mst_batch` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mst_pec_order` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mst_pec_order` WHERE ( cid='6' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select * from mst_batch,mst_product,mst_pec_order where mst_product.pid = mst_batch.pid and mst_batch.bid = mst_pec_order.bid  order by mst_pec_order.createtime desc [ RunTime:0.0103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 208 行.
+NOTIC: [8] Undefined variable: bid /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 280 行.
+NOTIC: [8] Undefined variable: product_code /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/cee8f6fedc40ea3e26f44c740bc6a47a.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2018-04-23T20:33:33+08:00 ] 127.0.0.1 /pecorder/edit/251
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `mst_pec_order` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mst_pec_order` WHERE ( pec_order_id=251 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mst_batch` [ RunTime:0.0005s ]
+SQL: SELECT `batch_code` FROM `mst_batch` WHERE ( bid = 50 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `mst_batch` WHERE ( bid = 50 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: can_edit_sum /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0ad7e25cbd6341d20204dcb79ef78170.php 第 306 行.
+NOTIC: [8] Undefined variable: repair_on /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0ad7e25cbd6341d20204dcb79ef78170.php 第 341 行.
+NOTIC: [8] Undefined variable: repair_on /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/0ad7e25cbd6341d20204dcb79ef78170.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2018-04-23T20:43:07+08:00 ] 127.0.0.1 /apiconfig/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002450s ]
+SQL: SHOW COLUMNS FROM `mst_api_list` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `mst_api_list` ORDER BY createtime desc  [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 208 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined variable: page /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 330 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002737s ]
+
+[ 2018-04-23T20:43:11+08:00 ] 127.0.0.1 /apiconfig/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `mst_api_list` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mst_api_list` ORDER BY createtime desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 208 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined variable: page /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 330 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2018-04-23T20:43:13+08:00 ] 127.0.0.1 /apiconfig/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `mst_api_list` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mst_api_list` ORDER BY createtime desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 208 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined variable: page /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 330 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2018-04-23T20:43:16+08:00 ] 127.0.0.1 /apiconfig/newone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [8] Undefined variable: api_id /Users/luochao/PhpProject/wfw/MST/Home/Controller/ApiconfigController.class.php 第 206 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 89 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 90 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 98 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 99 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 100 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 109 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 110 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 111 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 125 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 126 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 146 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 147 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 157 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 158 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 159 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 173 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 174 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 200 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 210 行.
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 212 行.
+NOTIC: [8] Undefined variable: api_password /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 313 行.
+NOTIC: [8] Undefined variable: api_weixin_appid /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 322 行.
+NOTIC: [8] Undefined variable: api_weixin_aes_key /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 334 行.
+NOTIC: [8] Undefined variable: api_weixin_token /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 342 行.
+NOTIC: [8] Undefined variable: api_other_url /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 351 行.
+NOTIC: [8] Undefined variable: api_weixin_pay_account /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 359 行.
+NOTIC: [8] Undefined variable: api_weixin_pay_key /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 367 行.
+NOTIC: [8] Undefined variable: api_weixin_client_ip /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/1408a75d8d4d739202248637bce20d9f.php 第 375 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2018-04-23T20:43:17+08:00 ] 127.0.0.1 /apiconfig/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `mst_api_list` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mst_api_list` ORDER BY createtime desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 208 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined variable: page /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 330 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2018-04-23T20:43:19+08:00 ] 127.0.0.1 /apiconfig/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `mst_api_list` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mst_api_list` ORDER BY createtime desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 208 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined variable: page /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 330 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2018-04-23T21:09:36+08:00 ] 127.0.0.1 /datashow/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001895s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mst_product` WHERE ( cid = '6' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mst_provincial` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mst_provincial`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 88 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 89 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 97 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 98 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 99 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 108 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 109 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 110 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 124 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 125 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 145 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 146 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 156 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 157 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 158 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 172 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 173 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 199 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 209 行.
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001984s ]
+
+[ 2018-04-23T21:09:36+08:00 ] 127.0.0.1 /assets/images/icon_01.jpg.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+ERR: 无法加载控制器:Assets
+
+[ 2018-04-23T21:09:59+08:00 ] 127.0.0.1 /datashow/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mst_product` WHERE ( cid = '6' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mst_provincial` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mst_provincial`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 88 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 89 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 97 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 98 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 99 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 108 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 109 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 110 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 124 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 125 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 145 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 146 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 156 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 157 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 158 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 172 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 173 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 199 行.
+NOTIC: [8] Undefined variable: page_id /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 209 行.
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/8fc90ff6844a5386e8a2201fd589ec70.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2018-04-23T21:09:59+08:00 ] 127.0.0.1 /assets/images/icon_01.jpg.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+ERR: 无法加载控制器:Assets
+
+[ 2018-04-23T21:10:03+08:00 ] 127.0.0.1 /datashow/getCondition_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `mst_tb_province` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mst_tb_province`  [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000905s ]
+
+[ 2018-04-23T21:10:03+08:00 ] 127.0.0.1 /datashow/getCondition_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `mst_tb_province` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `mst_tb_province`  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001444s ]
+
+[ 2018-04-23T21:10:03+08:00 ] 127.0.0.1 /datashow/getCondition_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `mst_product` WHERE ( cid = '15' )  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2018-04-23T21:10:11+08:00 ] 127.0.0.1 /datashow/getCondition_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mst_product` WHERE ( cid = '15' )  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2018-04-23T21:10:20+08:00 ] 127.0.0.1 /datashow/getCondition_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `mst_tb_province` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mst_tb_province`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2018-04-23T21:10:33+08:00 ] 127.0.0.1 /datashow/commondatarequestv2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+NOTIC: [2] include_once(\ThinkPHP\Library\Vendor\Json\json.php): failed to open stream: No such file or directory /Users/luochao/PhpProject/wfw/MST/Home/Controller/DatashowController.class.php 第 345 行.
+NOTIC: [2] include_once(): Failed opening '\ThinkPHP\Library\Vendor\Json\json.php' for inclusion (include_path='.:') /Users/luochao/PhpProject/wfw/MST/Home/Controller/DatashowController.class.php 第 345 行.
+SQL: SHOW COLUMNS FROM `mst_batch` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `mst_pec_order` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: price_deal_return /Users/luochao/PhpProject/wfw/MST/Home/Controller/DatashowController.class.php 第 401 行.
+SQL: SELECT `bid` FROM `mst_batch` WHERE `pid` IN ('52','54') AND `startpoint` = '天津' AND `sellpoint` IN ('北京','河北','山西')  [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: price_deal_return /Users/luochao/PhpProject/wfw/MST/Home/Controller/DatashowController.class.php 第 401 行.
+SQL: SELECT `bid` FROM `mst_batch` WHERE `pid` IN ('52','54') AND `startpoint` = '河北' AND `sellpoint` IN ('北京','河北','山西')  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: price_deal_return /Users/luochao/PhpProject/wfw/MST/Home/Controller/DatashowController.class.php 第 401 行.
+SQL: SELECT `bid` FROM `mst_batch` WHERE `pid` IN ('52','54') AND `startpoint` = '山西' AND `sellpoint` IN ('北京','河北','山西')  [ RunTime:0.0008s ]
+NOTIC: [2] include_once(\ThinkPHP\Library\Vendor\Json\json.php): failed to open stream: No such file or directory /Users/luochao/PhpProject/wfw/MST/Home/Common/function.php 第 2241 行.
+NOTIC: [2] include_once(): Failed opening '\ThinkPHP\Library\Vendor\Json\json.php' for inclusion (include_path='.:') /Users/luochao/PhpProject/wfw/MST/Home/Common/function.php 第 2241 行.
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0011s ]
+SQL: SELECT `product_name` FROM `mst_product` WHERE ( pid = '54' ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2018-04-23T21:11:28+08:00 ] 127.0.0.1 /datashow/commondatarequestv2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [2] include_once(\ThinkPHP\Library\Vendor\Json\json.php): failed to open stream: No such file or directory /Users/luochao/PhpProject/wfw/MST/Home/Controller/DatashowController.class.php 第 345 行.
+NOTIC: [2] include_once(): Failed opening '\ThinkPHP\Library\Vendor\Json\json.php' for inclusion (include_path='.:') /Users/luochao/PhpProject/wfw/MST/Home/Controller/DatashowController.class.php 第 345 行.
+SQL: SHOW COLUMNS FROM `mst_batch` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mst_pec_order` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: price_deal_return /Users/luochao/PhpProject/wfw/MST/Home/Controller/DatashowController.class.php 第 401 行.
+SQL: SELECT `bid` FROM `mst_batch` WHERE `pid` IN ('52','54') AND `startpoint` = '天津' AND `sellpoint` IN ('北京','河北','山西')  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: price_deal_return /Users/luochao/PhpProject/wfw/MST/Home/Controller/DatashowController.class.php 第 401 行.
+SQL: SELECT `bid` FROM `mst_batch` WHERE `pid` IN ('52','54') AND `startpoint` = '河北' AND `sellpoint` IN ('北京','河北','山西')  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: price_deal_return /Users/luochao/PhpProject/wfw/MST/Home/Controller/DatashowController.class.php 第 401 行.
+SQL: SELECT `bid` FROM `mst_batch` WHERE `pid` IN ('52','54') AND `startpoint` = '山西' AND `sellpoint` IN ('北京','河北','山西')  [ RunTime:0.0012s ]
+NOTIC: [2] include_once(\ThinkPHP\Library\Vendor\Json\json.php): failed to open stream: No such file or directory /Users/luochao/PhpProject/wfw/MST/Home/Common/function.php 第 2241 行.
+NOTIC: [2] include_once(): Failed opening '\ThinkPHP\Library\Vendor\Json\json.php' for inclusion (include_path='.:') /Users/luochao/PhpProject/wfw/MST/Home/Common/function.php 第 2241 行.
+SQL: SHOW COLUMNS FROM `mst_product` [ RunTime:0.0010s ]
+SQL: SELECT `product_name` FROM `mst_product` WHERE ( pid = '54' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-04-23T21:21:51+08:00 ] 127.0.0.1 /apiconfig/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `mst_api_list` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mst_api_list` ORDER BY createtime desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: mode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 208 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined index: api_encodemode /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 311 行.
+NOTIC: [8] Undefined variable: page /Users/luochao/PhpProject/wfw/MST/Runtime/Cache/Home/06b2b1093f830869ad3c274ac308a12b.php 第 330 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+

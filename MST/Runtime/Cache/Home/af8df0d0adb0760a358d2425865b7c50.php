@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -31,7 +31,7 @@
 			</div>
 			<div class="sign">
 				<p class="title" style="font-size: 18px;font-weight: bold;">企业客户注册</p>
-				<font color="red">{$error}</font>
+				<font color="red"><?php echo ($error); ?></font>
 				<div style="width: 65%;margin: 20px auto 40px auto;">
 				<form action="/user/register_deal" enctype="multipart/form-data" method="post">
 				<div class="inputbox">
@@ -74,7 +74,7 @@
 					<label><b>输入下方验证码</b>
 					<input  class="inp" id="inpcode" name="code"></label>
 					<div>
-					<label><img src="{:U('Verify/verifier','','')}" id="code"><a href="javascript:void(change_code(this));" style=""><b>看不清</b></a></label>
+					<label><img src="<?php echo U('Verify/verifier','','');?>" id="code"><a href="javascript:void(change_code(this));" style=""><b>看不清</b></a></label>
 					</div>
 				</div>
 					<button type="submit" id="done">确定</button>

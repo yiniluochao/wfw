@@ -30,15 +30,15 @@ class UserController extends Controller {
        $password = I('post.password');
        $sha1pw = sha1(sha1($password));
        
-       
+       /*
        if(!check_verify($code))
        {
        		$this->error('验证码错误!','/user/login/');
        	   return false;
-       }
+       }*/
        // 验证密码
        $company_user = M('company_user');
-       $uid = $result['uid'];
+       #$uid = $result['uid'];
        $result = $company_user->where("login = '$login' and password = '$sha1pw'")->find();
         if ($result != null) {
         	if(1!=$result['state'])

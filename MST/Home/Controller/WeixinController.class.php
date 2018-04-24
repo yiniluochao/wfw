@@ -618,7 +618,7 @@ function upload()
  	$uid = get_user_id();
  	//dump($uid);die;
  	if(null == $uid){
- 		$this->error('请重新登陆!','/user/login');break;
+ 		$this->error('请重新登陆!','/user/login');
  	}
  	$return = M('pec_order')->where("cid='$uid' and type=1 and isdownload=1 ")->getField('pec_order_id',true);// 当前登陆用户且开启红包功能的订单
  	if(null == $return){
